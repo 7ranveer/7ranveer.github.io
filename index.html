@@ -1,1 +1,130 @@
-Hello World
+<html>
+<head>
+<title>RANVEER</title>
+<link rel='stylesheet prefetch' href='http:////maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  body {
+      position: relative; 
+  }
+.about{
+     margin-top:60px;
+  margin-bottom:60px;
+  margin-left:100px;
+  margin-right:100px;
+    font-size:2em;
+  
+    }
+  #About {
+    
+    display:block;
+    padding-top:50px;
+    height:500px;
+    color: #fff;
+    background-color: #20B2AA;
+    text-align:center;
+}
+  #Portfolio {
+    padding-top:50px;
+    height:500px;
+    color: #fff;
+    background-color: #27408B;
+    text-align:center;
+}
+  #Contact {padding-top:50px;
+    height:600px;
+    color: #fff;
+    text-align:center;
+    background-color: #8FBC8F;
+    ul{
+      padding:10px;
+    }
+    
+    i{
+      height:50px;
+      width:50px;
+    }
+    }
+.social{
+  color: #fff;
+  border:solid 2px #fff;
+  border-radius:50%;
+  display:inline-block;
+  width:40px;
+  height:40px;
+  text-align:center;
+  font-size:30px;
+  line-height:30px;
+  transition:all .3s ease-in-out;
+}
+</style>
+</head>
+<body>
+<script src='http:////cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script src="js/index.js">
+  $(document).ready(function(){
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+  $("#myNavbar a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+          }, 800, function(){
+        window.location.hash = hash;
+      }); 
+    }
+  });
+});
+</script>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>          </button>
+      <a class="navbar-brand navbar-brand-custom" href="http://codepen.io/7ranveer/pen/ZWdKbP"><strong><em>7</em>Ranveer</strong></a>
+    </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#About"> <i class="fa fa-info-circle"></i> About Me</a></li>
+          <li><a href="#Portfolio"> <i class="fa fa-briefcase"></i> Portfolio</a></li>
+          <li><a href="#Contact"> <i class="fa fa-envelope"></i> Contact Me </a></li>
+            </ul>
+   </div>
+  </div>
+</nav>    
+
+<div id="About" class="container-fluid containerItem">
+ 
+  <p class="about">Hi I'm <strong>Ranveer Gohil</strong>. On the internet I'm <strong>7Ranveer</strong>. An Engineering Student currently persuing Bachelor Degree(IT) from <strong>IIIT Vadodara</strong>. I'm interested in <strong>Web Development</strong> using <em>python3</em> (framework-django). Apart from this I love listening music and I'm fond of food from all over the globe.</p>
+  <p class="about">Skills - C/C++ Java Python Html5 CSS JAVASCRIPT</p>
+</div>
+<div id="Portfolio" class="container-fluid">
+  <h1>Projects</h1>
+</div>
+<div id="Contact" class="container-fluid">
+  <h1>Contacts</h1>
+   <p class="about"><strong><i class="fa fa-at"></i>
+    Email:</strong> ranveergohil@gmail.com,  201452010@iiitvadodara.ac.in</br>
+   <strong>
+   <i class="fa fa-mobile"></i>
+    Mobile:</strong> +91 8758384099, +91 8460941909</p>
+  <h2>Around the web</h2>
+  <div class="row-sm-4" class="about"><ul><li><button class="social"><a href="https://github.com/ranveersinh" target="_blank">
+     <i class="fa fa-github-square"></i></a></button></li><br>
+    <li><button class="social"><a href="https://www.linkedin.com/in/ranveer-gohil" target="_blank">
+     <i class="fa fa-linkedin"></i></a></button></li><br>
+    <li><button class="social"><a href="https://twitter.com/ranveersinh96" target="_blank">
+     <i class="fa fa-twitter"></i></a></button></li><br>
+    <li><button class="social"><a href="https://www.facebook.com/ranvirgohil" target="_blank">
+     <i class="fa fa-facebook"></i></a></button></li>
+    </ul>
+ </div>
+</div>
+</body>
+</html>
