@@ -26,7 +26,7 @@
 }
   #Portfolio {
     padding-top:50px;
-    height:600px;
+    height:500px;
     color: #fff;
     background-color: #27408B;
     text-align:center;
@@ -39,7 +39,9 @@
     ul{
       padding:10px;
     }
-    
+    li{
+     display:inline;   
+    }
     i{
       height:50px;
       width:50px;
@@ -70,14 +72,11 @@
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;
-      $('html, body').animate({
+$('html, body').animate({
         scrollTop: $(hash).offset().top
-          }, 800, function(){
+      }, 800, function(){
         window.location.hash = hash;
-      }); 
-    }
-  });
-});
+      }); } });});
 </script>
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
