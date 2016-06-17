@@ -1,22 +1,45 @@
 <html>
 <head>
 <title>Developer</title>
-<link rel='stylesheet prefetch' href='http:////maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
 <style>
   body {
       position: relative; 
   }
+.container-fluid {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+.b {
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
 .about{
      margin-top:60px;
   margin-bottom:60px;
-  margin-left:100px;
-  margin-right:100px;
+  margin-left:50px;
+  margin-right:200px;
     font-size:2em;
-  
-    }
+  text-align:left;
+  }
+.ig:hover
+{
+    cursor: default;
+    transform: rotate(-60deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+.ig{
+  transition: all 0.3s ease-in-out 0s;
+  width:350px;
+  float:right;
+  margin-top:50px;
+}
+.navbar-nav li a:hover {
+    color: #00AAA0 !important;
+}
   #About {
-    
     display:block;
     padding-top:50px;
     height:500px;
@@ -25,41 +48,49 @@
     text-align:center;
 }
   #Portfolio {
-    padding-top:50px;
-    height:600px;
+    padding-top:40px;
+    padding-left:60px;
+    padding-right:70px;
+    height:900px;
     color: #fff;
     background-color: #27408B;
     text-align:center;
 }
+img{
+  margin:20px;
+}
   #Contact {
     padding-top:50px;
-    height:600px;
+    height:400px;
     color: #fff;
     text-align:center;
     background-color: #8FBC8F;
-    ul{
-      padding:10px;
-      list-style-type:none;
-    }
-    li{
-     display:inline;   
-    }
-    i{
+    i {
       height:50px;
       width:50px;
     }
     }
+footer i{
+  height:60px;
+}
+footer li{
+ list-style-type:none;
+}
 .social{
-  color: #fff;
+  float:right;
+  color: #000;
   border:solid 2px #fff;
   border-radius:50%;
   display:inline-block;
+  text-align:center;
   width:40px;
   height:40px;
-  text-align:center;
   font-size:30px;
   line-height:30px;
   transition:all .3s ease-in-out;
+}
+.w{
+  width:60%;
 }
 </style>
 </head>
@@ -71,7 +102,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>          </button>
-      <a class="navbar-brand navbar-brand-custom" href="7ranveer.github.io"><strong><em>7</em>Ranveer</strong></a>
+      <a class="navbar-brand navbar-brand-custom" href="http://codepen.io/7ranveer/pen/ZWdKbP"><strong><em>7</em>Ranveer</strong></a>
     </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
@@ -84,12 +115,17 @@
 </nav>    
 
 <div id="About" class="container-fluid containerItem">
- 
-  <p class="about">Hi I'm <strong>Ranveer Gohil</strong>. On the internet I'm <strong>7Ranveer</strong>. An Engineering Student currently persuing Bachelor Degree(IT) from <strong>IIIT Vadodara</strong>. I'm looking forward for a carier in <strong>Web Development</strong> plus I want to be a good developer. Apart from this I love listening music and I'm fond of food from all over the globe.</p>
+ <img src="https://s-media-cache-ak0.pinimg.com/avatars/ranveergohil_1423637848_140.jpg" class="img-circle ig" alt="ranveer">
+  <p class="about">Hi I'm <strong>Ranveer Gohil</strong>. On the internet I'm <strong>7Ranveer</strong>. An Engineering Student currently persuing Bachelor Degree(IT) from <strong>IIIT Vadodara</strong>. I'm looking forward for a carier in <strong>Web Development</strong>. Apart from this I love listening music and I'm fond of food from all over the globe.</p><hr>
   <p class="about">Skills - C/C++ Java Python Html5 CSS JAVASCRIPT</p>
+  
 </div>
 <div id="Portfolio" class="container-fluid">
-  <h1>Projects</h1>
+  <h1>Projects</h1><hr>
+  <img src="https://drive.google.com/uc?export=view&id=0BxuFr4ToyA6xalRBMUs2d3RhcEk" width="400px" height="300px" align="left">
+  <img src="https://drive.google.com/uc?export=view&id=0BxuFr4ToyA6xb2VqWjNYRVprZHM" width="400px" height="300px" align="right">
+  <img src="https://drive.google.com/uc?export=view&id=0BxuFr4ToyA6xRm1fNVk3Si1GYVk" width="400px" height="300px" align="left">
+  <img src="https://drive.google.com/uc?export=view&id=0BxuFr4ToyA6xX3M5T1FMbi13NFE" width="400px" height="300px" align="right">
 </div>
 <div id="Contact" class="container-fluid">
   <h1>Contacts</h1>
@@ -97,24 +133,28 @@
     Email:</strong> ranveergohil@gmail.com,  201452010@iiitvadodara.ac.in</br>
    <strong>
    <i class="fa fa-mobile"></i>
-    Mobile:</strong> +91 8758384099, +91 8460941909</p>
-  <h2>Around the web</h2>
-  <div class="row-sm-4" class="about"><ul><li><button class="social"><a href="https://github.com/ranveersinh" target="_blank">
-     <i class="fa fa-github-square"></i></a></button></li><br>
-    <li><button class="social"><a href="https://www.linkedin.com/in/ranveer-gohil" target="_blank">
-     <i class="fa fa-linkedin"></i></a></button></li><br>
-    <li><button class="social"><a href="https://twitter.com/ranveersinh96" target="_blank">
-     <i class="fa fa-twitter"></i></a></button></li><br>
-    <li><button class="social"><a href="https://www.facebook.com/ranvirgohil" target="_blank">
-     <i class="fa fa-facebook"></i></a></button></li>
-    </ul>
- </div>
-</div>
+    Mobile:</strong> +91 8758384099, +91 8460941909</p> </div>
+<footer class="container-fluid b text-center">
+  <h2>Around the web</h2><hr>
+  <div class="w">
+  <ul><li><a href="https://github.com/7ranveer" target="_blank"><button class="social">
+     <i class="fa fa-github-square"></i></button></a></li><br>
+    <li><a href="https://www.linkedin.com/in/ranveer-gohil-a22504b4" target="_blank"><button class="social">
+     <i class="fa fa-linkedin"></i></button></a></li><br>
+    <li><a href="https://twitter.com/ranveersinh96" target="_blank"><button class="social">
+     <i class="fa fa-twitter"></i></button></a></li><br>
+    <li><a href="https://www.facebook.com/ranvirgohil" target="_blank"><button class="social">
+     <i class="fa fa-facebook"></i></button></a></li>
+    </ul></div><div>
+  created by RANVEER GOHIL
+  </div>
+</footer>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script>
-  $(document).ready(function(){
+ $(document).ready(function(){
   $('body').scrollspy({target: ".navbar", offset: 50});   
   $("#myNavbar a").on('click', function(event) {
     if (this.hash !== "") {
